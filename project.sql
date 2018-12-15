@@ -62,27 +62,14 @@ CREATE TABLE `customers_vs_coupons` (
 
 
 
-DELETE FROM companies;
--- Inserting test records
+
+-- Inserting test companies
 INSERT INTO `companies` VALUES
   
    (1,'Novonordisk','123@gmail.com','abc123'),
    (NULL,'jb','243@gmail.com','456123');
    
-   -- No photo yet, set to NULL
-SELECT * FROM `companies`;
- 
-INSERT INTO `customers` VALUES
-   (1001, 'Tan Ah Teck', '8 Happy Ave', '88888888', 0.1),
-   (NULL, 'Mohammed Ali', '1 Kg Java', '99999999', 0.15),
-   (NULL, 'Kumar', '5 Serangoon Road', '55555555', 0),
-   (NULL, 'Kevin Jones', '2 Sunset boulevard', '22222222', 0.2);
-SELECT * FROM `customers`;
- 
-INSERT INTO `rental_records` VALUES
-  (NULL, 'SBA1111A', 1001, '2012-01-01', '2012-01-21', NULL),
-  (NULL, 'SBA1111A', 1001, '2012-02-01', '2012-02-05', NULL),
-  (NULL, 'GA5555E',  1003, '2012-01-05', '2012-01-31', NULL),
-  (NULL, 'GA6666F',  1004, '2012-01-20', '2012-02-20', NULL);
-SELECT * FROM `rental_records`;
 
+ SELECT * FROM `companies`;
+ 
+ 
